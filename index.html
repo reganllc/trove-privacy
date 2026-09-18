@@ -53,7 +53,25 @@ visit, exactly as any browser does. Trove adds nothing: no proxying, no logging 
 </ul>
 
 <h2>Read Aloud (text-to-speech)</h2>
-<p>Speech is generated on your device by Apple's built-in speech synthesizer. Document text is not sent anywhere.</p>
+<p>Speech is generated on your device by Apple's built-in speech synthesizer, including when you save a
+document as an audiobook. Document text is not sent anywhere. If you allow Trove to use a Personal Voice you
+recorded in iOS settings, that voice also runs entirely on your device.</p>
+
+<h2>Summaries and questions (Apple Intelligence)</h2>
+<p>Summarize &amp; Ask uses Apple's on-device language model (iOS 26 and later, on devices that support
+Apple Intelligence). The document text and your questions are processed on your device and are not sent to
+the developer or to any server.</p>
+
+<h2>Web link shortcuts and saved pages</h2>
+<p>When you save a web link, Trove fetches that site's icon directly from the site, the same request a
+browser makes when it shows a page, and caches it on your device. Saving a page for offline reading stores a
+copy of the page on your device. Nothing about these is reported to the developer.</p>
+
+<h2>Cloud folders</h2>
+<p>Linking a folder from iCloud Drive, Dropbox, Google Drive, OneDrive, or the Files app gives Trove access
+only to that folder, through Apple's Files framework, and only while you use it. Files you pull in are copied
+to your device; files you copy out are written to that folder by that provider. Trove has no account with any
+cloud service and never sees your credentials.</p>
 
 <h2>Transcription</h2>
 <p>Trove can turn a recording into text. By default this runs entirely on your device, and the audio is
